@@ -1,2 +1,4 @@
 target/
+**/tls.key
+**/tls.crt
 firmware-rs/src/secrets.rs
