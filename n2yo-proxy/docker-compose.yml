@@ -1,0 +1,13 @@
+services:
+  n2yo-proxy:
+    build: .
+    container_name: n2yo-proxy
+    image: n2yo-proxy
+    ports:
+      - 9443:9443
+    networks:
+      - lab
+
+networks:
+  lab:
+    external: true
