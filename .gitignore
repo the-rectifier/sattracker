@@ -1,1 +1,2 @@
-/target
+target/
+firmware-rs/src/secrets.rs

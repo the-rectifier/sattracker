@@ -6,6 +6,12 @@ license = "MIT OR Apache-2.0"
 
 [patch.crates-io]
 [dependencies]
+reqwless = "0.11.0"
+embedded-tls = { version = "0.17.0", features = [
+    "alloc",
+    "log",
+], default-features = false }
+
 embassy-embedded-hal = { version = "0.1.0", path = "/home/canopus/dev/embassy/embassy-embedded-hal", features = [
     "defmt",
 ] }
@@ -37,6 +43,7 @@ embassy-net = { version = "0.4.0", path = "/home/canopus/dev/embassy/embassy-net
     "defmt",
     "tcp",
     "udp",
+    "dns",
     "dhcpv4",
     "medium-ethernet",
 ] }
